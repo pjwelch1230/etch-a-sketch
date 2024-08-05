@@ -3,9 +3,10 @@
     height: 4px;
     border-style: solid;
     border-color: black;
+    border-width: 0.5px;;
     border-right: 0px;
-    /* border-bottom: 0px; */
-    padding: 4px;
+    border-bottom: 0px;
+    padding: 1.5px;
     margin: 0;
 }
 
@@ -14,13 +15,26 @@
     height: 4px;
     border-style: solid;
     border-color: black;
-    padding: 4px;
+    border-width: 0.5px;
+    border-bottom: 0px;
+    padding: 1.5px;
 }
 
-.bottomB {
+.bottom {
     width: 4px;
     height: 4px;
     border-style: solid;
     border-color: black;
-    padding: 4px;
+    border-width: 0.5px;
+    border-right: 0px;
+    padding: 1.5px;
+}
+
+.bottomR {
+    width: 4px;
+    height: 4px;
+    border-style: solid;
+    border-color: black;
+    border-width: 0.5px;
+    padding: 1.5px;
 }
