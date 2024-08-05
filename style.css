@@ -1,0 +1,26 @@
+.square {
+    width: 4px;
+    height: 4px;
+    border-style: solid;
+    border-color: black;
+    border-right: 0px;
+    /* border-bottom: 0px; */
+    padding: 4px;
+    margin: 0;
+}
+
+.rightB {
+    width: 4px;
+    height: 4px;
+    border-style: solid;
+    border-color: black;
+    padding: 4px;
+}
+
+.bottomB {
+    width: 4px;
+    height: 4px;
+    border-style: solid;
+    border-color: black;
+    padding: 4px;
+}
