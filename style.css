@@ -1,40 +1,44 @@
 .square {
-    width: 4px;
-    height: 4px;
+    box-sizing: border-box;
+    /* width: 4px;
+    height: 4px; */
     border-style: solid;
     border-color: black;
-    border-width: 0.5px;;
+    /* border-width: 0.25px;; */
     border-right: 0px;
     border-bottom: 0px;
-    padding: 1.5px;
-    margin: 0;
+    /* padding: 1.5px; */
+    /* margin: 0; */
 }
 
 .rightB {
-    width: 4px;
-    height: 4px;
+    box-sizing: border-box;
+    /* width: 4px;
+    height: 4px; */
     border-style: solid;
     border-color: black;
-    border-width: 0.5px;
+    /* border-width: 0.25px; */
     border-bottom: 0px;
-    padding: 1.5px;
+    /* padding: 1.5px; */
 }
 
 .bottom {
-    width: 4px;
-    height: 4px;
+    box-sizing: border-box;
+    /* width: 4px;
+    height: 4px; */
     border-style: solid;
     border-color: black;
-    border-width: 0.5px;
+    /* border-width: 0.25px; */
     border-right: 0px;
-    padding: 1.5px;
+    /* padding: 1.5px; */
 }
 
 .bottomR {
-    width: 4px;
-    height: 4px;
+    box-sizing: border-box;
+    /* width: 4px;
+    height: 4px; */
     border-style: solid;
     border-color: black;
-    border-width: 0.5px;
-    padding: 1.5px;
+    /* border-width: 0.25px; */
+    /* padding: 1.5px; */
 }
