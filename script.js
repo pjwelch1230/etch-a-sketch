@@ -2,7 +2,7 @@ const bigContainer = document.querySelector("#bigContainer");
 bigContainer.style.display="flex";
 bigContainer.style.flexDirection="column";
 bigContainer.style.justifyContent="center";
-bigContainer.style.minWidth="119px"
+bigContainer.style.minWidth="960px"
 bigContainer.style.marginRight="auto";
 bigContainer.style.marginLeft="auto";
 
@@ -26,7 +26,7 @@ bigContainer.appendChild(lilContainer);
 
 function createGrid (size = 16) {
     let opa = 0.1;
-    let squareSize = 119/size;
+    let squareSize = 960/size;
     for (let i = 0; i < size; i++) {
         const xSquare = document.createElement("div");
         xSquare.style.display="inline-block";
