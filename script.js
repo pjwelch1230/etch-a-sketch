@@ -1,4 +1,4 @@
-const pixelSize = 500;
+const pixelSize = 175;
 
 const bigContainer = document.querySelector("#bigContainer");
 bigContainer.style.display="flex";
@@ -10,12 +10,12 @@ bigContainer.style.marginLeft="auto";
 
 const sizeBtn = document.createElement("button");
 sizeBtn.textContent = "Click to Change Size";
-sizeBtn.style.fontSize = "2.5px";
-sizeBtn.style.width = "48px";
+sizeBtn.style.fontSize = "12px";
+sizeBtn.style.width = "120px";
 sizeBtn.style.padding = "0px";
 sizeBtn.style.display = "block";
-sizeBtn.style.marginTop = "-6px";
-sizeBtn.style.marginBottom = "2px";
+sizeBtn.style.marginTop = "-2px";
+sizeBtn.style.marginBottom = "6px";
 sizeBtn.style.alignSelf = "center";
 bigContainer.appendChild(sizeBtn);
 
@@ -40,20 +40,20 @@ function createGrid (size = 16) {
             
             if (i === (size - 1) && j != (size - 1)) {
                 ySquare.classList.add("rightB");
-                ySquare.style.width = squareSize+(squareSize*0.1)+"px";
+                ySquare.style.width = squareSize+"px";
                 ySquare.style.height = squareSize+"px";
                 ySquare.style.padding = squareSize+"px";
                 ySquare.style.borderWidth = squareSize*0.1;
             }  else if (i === (size - 1) && j === (size - 1)) {
                 ySquare.classList.add("bottomR");
-                ySquare.style.width = squareSize+(squareSize*0.1)+"px";
-                ySquare.style.height = squareSize+(squareSize*0.1)+"px";
+                ySquare.style.width = squareSize+"px";
+                ySquare.style.height = squareSize+"px";
                 ySquare.style.padding = squareSize+"px";
                 ySquare.style.borderWidth = squareSize*0.1;
             }  else if (i != (size - 1) && j === (size - 1)) {
                 ySquare.classList.add("bottom");
                 ySquare.style.width = squareSize+"px";
-                ySquare.style.height = squareSize+(squareSize*0.1)+"px";
+                ySquare.style.height = squareSize+"px";
                 ySquare.style.padding = squareSize+"px";
                 ySquare.style.borderWidth = squareSize*0.1;
             }  else {
