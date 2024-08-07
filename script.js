@@ -47,7 +47,7 @@ function createGrid (size = 16) {
             }
             ySquare.style.width = squareSize+"px";
             ySquare.style.height = squareSize+"px";
-            ySquare.style.padding = "16px;"
+            ySquare.style.padding = squareSize+"px";
             ySquare.style.borderWidth = squareSize*0.1;
             const r = Math.floor(Math.random() * 256);
             const g= Math.floor(Math.random() * 256);
