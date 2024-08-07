@@ -38,17 +38,29 @@ function createGrid (size = 16) {
             
             if (i === (size - 1) && j != (size - 1)) {
                 ySquare.classList.add("rightB");
+                ySquare.style.width = squareSize+(squareSize*0.1)+"px";
+                ySquare.style.height = squareSize+"px";
+                ySquare.style.padding = squareSize+"px";
+                ySquare.style.borderWidth = squareSize*0.1;
             }  else if (i === (size - 1) && j === (size - 1)) {
                 ySquare.classList.add("bottomR");
+                ySquare.style.width = squareSize+(squareSize*0.1)+"px";
+                ySquare.style.height = squareSize+(squareSize*0.1)+"px";
+                ySquare.style.padding = squareSize+"px";
+                ySquare.style.borderWidth = squareSize*0.1;
             }  else if (i != (size - 1) && j === (size - 1)) {
                 ySquare.classList.add("bottom");
+                ySquare.style.width = squareSize+"px";
+                ySquare.style.height = squareSize+(squareSize*0.1)+"px";
+                ySquare.style.padding = squareSize+"px";
+                ySquare.style.borderWidth = squareSize*0.1;
             }  else {
                 ySquare.classList.add("square");
+                ySquare.style.width = squareSize+"px";
+                ySquare.style.height = squareSize+"px";
+                ySquare.style.padding = squareSize+"px";
+                ySquare.style.borderWidth = squareSize*0.1;
             }
-            ySquare.style.width = squareSize+"px";
-            ySquare.style.height = squareSize+"px";
-            ySquare.style.padding = squareSize+"px";
-            ySquare.style.borderWidth = squareSize*0.1;
             const r = Math.floor(Math.random() * 256);
             const g= Math.floor(Math.random() * 256);
             const b= Math.floor(Math.random() * 256);
