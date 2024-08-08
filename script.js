@@ -1,11 +1,10 @@
 // number of pixels to be used by board
-const pixelSize = 175;
+const pixelSize = 600;
 
 // parent container of the button and the container for the board
 const bigContainer = document.querySelector("#bigContainer");
 bigContainer.style.display = "flex";
 bigContainer.style.flexDirection = "column";
-bigContainer.style.justifyContent = "center";
 bigContainer.style.minWidth = pixelSize+"px";
 
 // initializes button and styling
@@ -73,8 +72,7 @@ function createGrid (size = 16) {
             // sets width and height for all squares
             ySquare.style.width = squareSize+"px";
             ySquare.style.height = squareSize+"px";
-            ySquare.style.padding = squareSize+"px";
-            ySquare.style.borderWidth = (squareSize*0.1)+"px";
+            ySquare.style.borderWidth = (squareSize*0.05)+"px";
             ySquare.style.boxSizing = "border-box";
             // generates random rgb values
             const r = Math.floor(Math.random() * 256);
