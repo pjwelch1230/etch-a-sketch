@@ -1,5 +1,5 @@
 // number of pixels to be used by board
-const pixelSize = 600;
+const pixelSize = 500;
 
 // parent container of the button and the container for the board
 const bigContainer = document.querySelector("#bigContainer");
@@ -7,17 +7,46 @@ bigContainer.style.display = "flex";
 bigContainer.style.flexDirection = "column";
 bigContainer.style.minWidth = pixelSize+"px";
 
+// creates header
+const header = document.createElement("div");
+header.style.backgroundColor = "#011257";
+header.style.margin = "-8px";
+header.style.borderBottom = "4px solid black";
+
+// title text and styling
+const title = document.createElement("p");
+title.textContent = "Etch a Sketch"
+title.style.marginTop = "2%";
+title.style.color = "white";
+title.style.textAlign = "center";
+title.style.fontSize = "32px";
+title.style.fontWeight = "600"
+title.style.fontFamily = "Roboto, sans-serif, serif";
+header.appendChild(title);
+
+// subtitle text and styling
+const subtitle = document.createElement("p");
+subtitle.textContent = "Drag your cursor over the board to start drawing!";
+subtitle.style.color = "#f0f0f2";
+subtitle.style.textAlign = "center";
+subtitle.style.fontSize = "18px";
+subtitle.style.fontWeight = "600"
+subtitle.style.marginTop = "-30px";
+subtitle.style.fontFamily = "Roboto, sans-serif, serif";
+header.appendChild(subtitle);
+
 // initializes button and styling
 const sizeBtn = document.createElement("button");
 sizeBtn.textContent = "Click to Change Size";
-sizeBtn.style.fontSize = "12px";
-sizeBtn.style.width = "120px";
+sizeBtn.style.color = "#011257";
+sizeBtn.style.fontSize = "14px";
+sizeBtn.style.width = "12%";
 sizeBtn.style.padding = "0px";
 sizeBtn.style.display = "block";
-sizeBtn.style.marginTop = "-2px";
+sizeBtn.style.marginTop = "12px";
 sizeBtn.style.marginBottom = "6px";
 sizeBtn.style.alignSelf = "center";
-bigContainer.appendChild(sizeBtn);
+
 
 // initializes container for the board
 const lilContainer = document.createElement("div");
@@ -29,7 +58,11 @@ lilContainer.style.maxWidth = pixelSize+"px";
 lilContainer.style.maxHeight = pixelSize+"px";
 lilContainer.style.marginLeft = "auto";
 lilContainer.style.marginRight = "auto";
+lilContainer.style.marginTop = "2%";
+
+bigContainer.appendChild(header);
 bigContainer.appendChild(lilContainer);
+bigContainer.appendChild(sizeBtn);
 
 function createGrid (size = 16) {
     // variable for incrementing opacity
